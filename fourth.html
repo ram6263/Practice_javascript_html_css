@@ -1,0 +1,24 @@
+<script>
+    var value = [10, 20, 30, 40]
+    document.write(`value : ${value}<br/>`)
+    value.unshift(5);
+    document.write(`value : ${value}<br/>`)
+    value.splice(2, 0, 35)
+    document.write(`value : ${value}<br/>`)
+
+    //map
+    value.map((item) => {
+        document.write(`${item}<br/>`)
+    })
+
+    document.write(`${value.splice(1, 1)} is deleted <br/>`)
+
+
+    //filter
+    const number = value.filter((val) => {
+        return val > 15
+    })
+    document.write(number.sort())
+
+
+</script>

@@ -1,0 +1,13 @@
+<script>
+    var value=[10,"A",true,["Jabalpur","Seoni"],function print(){document.write('Welcome Ram!')}]
+    document.write(`
+       number :${value[0]}<br/>
+       city : ${value[3][1]}<br/>
+    `)
+    value[4]();
+    
+    var one = [10,20]
+    var two=[30,40]
+    var three=[...one,...two]
+    document.write(`<br/> ${three}`)
+</script>

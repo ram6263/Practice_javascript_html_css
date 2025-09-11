@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-container{
+    width: 800px;
+    height: 600px;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+.Box{
+    
+    background-color: orange;
+    border: 10px solid black;
+
+}
+.header , .footer{
+    grid-column: 1/4;
+}
+.side{
+    grid-row: 2/4;
+}
+.Box3{
+    grid-column: 2/4;
+}
